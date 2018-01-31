@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/profilePhoto"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/tony_stark_small" />
+
+        <TextView
+            android:id="@+id/profileNmae"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/profilePhoto"
+            android:text="Tony Stark"
+            android:textColor="#222222"
+            android:layout_marginLeft="8dp"
+
+            android:textSize="24sp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/profileNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/profileEmail"
+
+
+            android:layout_alignStart="@+id/profileEmail"
+
+            android:layout_below="@+id/profileEmail"
+            android:text="+91 9435299999"
+            android:textColor="#555555"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/profileEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profileNmae"
+            android:layout_marginTop="5dp"
+            android:textColor="#555555"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="5dp"
+
+            android:layout_toEndOf="@+id/profilePhoto"
+            android:layout_toRightOf="@+id/profilePhoto"
+
+            android:text="tonystark@gmail.com"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <Button
+            android:id="@+id/buttonEducation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Education"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/buttonWork"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="Work Experiance"
+            android:textColor="#FFFFFF" />
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
